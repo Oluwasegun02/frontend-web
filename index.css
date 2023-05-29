@@ -26,6 +26,11 @@ body {
     height: 100vh;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.nav{
+    position: absolute;
+    width: 100%;
+    height: 35px;
+}
 .one {
     float: left;
     border-radius: 50%;

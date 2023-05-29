@@ -11,24 +11,27 @@ body {
   
 /* hearder */
 
-
 header {
-    background-color: #333;
-    padding: 20px;
+    height: 35px;
+    background-image: url(../image/slide.jpg);
+    padding: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   
   .logo img {
-    width: 100px;
-    height: auto;
+    margin-top: 3px;
+    width: 40px;
+    align-self: center;
+    border-radius: 50%;
   }
   
   .nav {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    text-align: center;
+    margin-left: 20px;
+    padding-right: 70px;
     display: flex;
   }
   
@@ -47,6 +50,15 @@ header {
   
   .nav a:hover {
     text-decoration: underline;
+  }
+  .nav a::before {
+    color: wheat;
+    text-decoration: underline;
+  }
+  
+  .nav a::after {
+    text-decoration-color: #666;
+    color: cornflowerblue;
   }
   
   .nav .basket {
@@ -77,68 +89,25 @@ header {
   }
   
   .sliding-words {
+  
+    color: #000;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: slideWords 10s infinite;
+    top: 70%;
+    left: 40%;
+
   }
   
   .word {
+    text-shadow: #333;
+    font-size: 900;
+    align-items: center;
     display: inline-block;
-    margin-right: 10px;
-    opacity: 0;
-    animation: slideWord 10s infinite;
+  
   }
   
-  @keyframes slideWord {
-    0% {
-      opacity: 0;
-      transform: translateY(-50px);
-    }
-    20% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    80% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    100% {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-  }
   
-  @keyframes slideWords {
-    0% {
-      transform: translate(-50%, -50%);
-    }
-    20% {
-      transform: translate(-50%, -50%);
-    }
-    25% {
-      transform: translate(-50%, -50%) translateY(-50px);
-    }
-    45% {
-      transform: translate(-50%, -50%) translateY(-50px);
-    }
-    50% {
-      transform: translate(-50%, -50%);
-    }
-    70% {
-      transform: translate(-50%, -50%);
-    }
-    75% {
-      transform: translate(-50%, -50%) translateY(50px);
-    }
-    95% {
-      transform: translate(-50%, -50%) translateY(50px);
-    }
-    100% {
-      transform: translate(-50%, -50%);
-    }
-  }
+  
+  
   
 /* hero  */
 
